@@ -1,0 +1,44 @@
+.card {
+  background-color: #FFFFFF;
+  height: 350px;
+  width: calc(33% - 12px);
+  border-radius: 20px;
+  border: 1px solid #e3e7eb;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px 20px 0 0;
+  }
+  div {
+    padding: 16px;
+    h4 {
+      font-size: 16px;
+      color: #141d24;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #141d24;
+      margin: 0;
+      text-align: left;
+      width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+              line-clamp: 2;
+      -webkit-box-orient: vertical;   
+    }
+  }
+}
+
+.extend {
+    width: calc(50% - 12px);
+    div p {
+        width: 60%;
+        text-align: left;
+    }
+}

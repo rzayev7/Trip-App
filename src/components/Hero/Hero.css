@@ -1,0 +1,12 @@
+.heroSection h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.heroSection p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 14px;
+}

@@ -1,0 +1,21 @@
+.secondHero {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 20px 0;
+  div {
+    width: 630px;
+    flex-direction: column;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    p {
+      text-align: left;
+      font-weight: 400;
+      line-height: 24px;
+      width: 94%;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.logosContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+
+button.signInLogo {
+  border-radius: 70px;
+  border: 1px solid #e3e7eb;
+  width: 100%;
+  background-color: #ffffff;
+  height: 50px;
+}
+
+aside {
+  background: url("../../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 47%;
+  min-height: 100%;
+  height: auto;
+}
+
+main {
+  width: 45%;
+  padding: 30px 70px 10px 70px;
+  margin: 0 auto;
+}
+
+main .appLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInContainer{
+  display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+main h1 {
+  font-size: 24px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main form,
+.signinButton {
+  font-size: 16px;
+}
+
+main form input,
+.signinButton,
+.resetButton {
+  height: 48px;
+  width: 100%;
+}
+
+main form input {
+  border-radius: 10px;
+  border: 2px solid #e3e7eb;
+  padding-left: 15px;
+  margin-top: 6px;
+}
+
+.signinButton,
+.resetButton {
+  border-radius: 24px;
+  border: 1px solid #e3e7eb;
+  background-color: #4a21ef;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.resetButton {
+  margin-top: 24px;
+}
+
+main p {
+  font-size: 14px;
+}
+
+.passwordContainer {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.signInContainer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+
+.signInContainer .footer .create-account {
+  padding: 0;
+}
+
+main form .passwordContainer img {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+p:nth-of-type(1) {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.footer p:nth-of-type(1),
+p.signUpWith {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  color: #97a5b2;
+}
+
+.footer p:nth-of-type(1) {
+  text-align: center;
+}
+
+p.signUpWith {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #141d24;
+}
+
+p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.footer a span {
+  color: #4a21ef;
+}
+
+p.enteringEmail {
+  font-weight: 400;
+  color: #5e6f7d;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  padding: 16px 0 24px 0;
+}
+
+div.top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 160px;
+  align-items: center;
+  margin-bottom: 80px;
+  height: 100px;
+  position: relative;
+  right: 40px;
+}
+
+.createAccountHeading {
+  margin-bottom: 40px;
+}
+
+p.createAccountFooter {
+  text-align: center;
+  color: #141d24;
+  font-weight: 400;
+  width: 60%;
+  margin: 50px auto;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+p.createAccountFooter a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 100vw;
+  }
+  main h1 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  main {
+    width: 100%;
+    padding: 0 30px;
+  }
+  aside {
+    display: none;
+  }
+  main .appLogoContainer {
+    padding: 20px;
+    height: 80px;
+    margin-bottom: 0;
+  }
+  main .logosContainer {
+    flex-direction: column;
+    height: 180px;
+  }
+  .signInContainer .footer {
+    gap: 10px;
+  }
+  .signInContainer .footer .social-medias {
+    order: 1;
+  }
+  .signInContainer .footer .create-account {
+    order: 0;
+    width: 70%;
+    text-align: left;
+  }
+  .footer .social-medias p:nth-of-type(1) {
+    margin-top: 0;
+  }
+}

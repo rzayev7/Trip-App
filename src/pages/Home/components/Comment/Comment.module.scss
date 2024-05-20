@@ -1,0 +1,104 @@
+.commentSection {
+  background: url("../../../../assets/homeComment/backgroundComment.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding-top: 400px;
+  padding-left: 1050px;
+  .container {
+    width: 380px;
+  }
+  p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .firstBox {
+    border-radius: 20px;
+    padding: 24px 32px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+    h5 {
+      font-size: 16px;
+      color: #4a21ef;
+    }
+    p:nth-of-type(1) {
+      line-height: 24px;
+    }
+    p:nth-of-type(2) {
+      font-size: 12px;
+      color: #788795;
+      font-weight: 400;
+    }
+    p:nth-of-type(3) {
+      font-size: 12px;
+      color: #5e6f7d;
+      font-weight: 600;
+    }
+  }
+  .secondBox {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 3fr;
+    border-radius: 20px;
+    padding: 20px 32px;
+    background-color: #ffffff;
+    height: 86px;
+    .iconContainer {
+      background-color: #4a21ef;
+      border-radius: 100px;
+      height: 50px;
+      width: 50px;
+      padding: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    p {
+      padding-top: 4px;
+      font-size: 12px;
+      color: #788795;
+    }
+    h5 span:nth-of-type(1) {
+      color: #c9d2da;
+      margin: 0 10px;
+      font-size: 17px;
+      font-weight: 200;
+    }
+    h5 span:nth-of-type(2) {
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .commentSection {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 100px;
+    .container {
+      width: 70%;
+      .secondBox {
+        h5{
+            display: flex;
+            justify-items: center;
+        span:nth-of-type(2) {
+            display: inline-block;
+            width: 100px;
+        }
+    }
+      }
+    }
+  }
+}

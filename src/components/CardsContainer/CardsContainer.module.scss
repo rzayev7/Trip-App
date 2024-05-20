@@ -1,0 +1,21 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 24px;
+    justify-content: space-between;
+    height: auto;
+    padding: 0 72px 120px 72px;
+}
+
+@media screen and (max-width:480px) {
+    .cardsContainer {
+        min-width: 100vw;
+        grid-template-rows: none;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        column-gap: 20px;
+        padding: 0 15px;
+        justify-content: center safe;
+    }
+}

@@ -1,0 +1,21 @@
+.topDestinations {
+    padding: 40px 32px 120px 32px;
+    height: auto;
+    h1 {
+        font-size: 36px;
+        color: #141D24;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topDestinations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

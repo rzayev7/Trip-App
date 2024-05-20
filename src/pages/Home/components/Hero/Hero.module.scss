@@ -1,0 +1,91 @@
+.hero {
+  height: 100vh;
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  video {
+    position: relative;
+    top: 10;
+    left: 100;
+    border-radius: 20px;
+    width: 94%;
+    height: 82vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+.textContainer {
+  position: absolute;
+  top: 320px;
+  text-align: center;
+  left: 33%;
+  h1 {
+    font-size: 48px;
+    color: #ffffff;
+  }
+
+  p {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .inputContainer {
+    position: relative;
+    input {
+      border-radius: 99px;
+      background-color: #ffffff;
+      border: 1px solid #c9d2da;
+      outline: none;
+      height: 56px;
+      padding: 8px 24px;
+      width: 380px;
+    }
+
+    .searchIconContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4a21ef;
+      height: 40px;
+      width: 40px;
+      border-radius: 24px;
+      padding: 8px 16px;
+      margin: 0 auto;
+      position: absolute;
+      right: 100px;
+      top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding: 15px 15px 32px 15px;
+    .videoContainer {
+      video {
+        height: 60vh;
+      }
+    }
+    .textContainer {
+      top: 260px;
+      left: 10%;
+    }
+    h1 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .inputContainer {
+      input {
+        width: 90%;
+      }
+      .searchIconContainer {
+        right: 22px;
+      }
+    }
+  }
+}
